@@ -2,7 +2,7 @@ function getMaxLessThanK(n, k){
     let val = 0;
     for(let i=0;i<n;i++){
         for(let j=i+1;j<=n;j++){
-            if((i & j) < k && (i & j) > 0){ 
+            if((i & j) < k && (i & j) > val){ 
                 val = i & j;
             }
         }
